@@ -1,7 +1,7 @@
 public class Student {
     public String ad;
     public String soyad;
-    public int not = -1; // Başlangıç değeri olarak geçersiz bir not
+    public int not = -1; 
 
     public Student(String ad, String soyad) {
         this.ad = ad;
@@ -11,7 +11,7 @@ public class Student {
     public void setNot(int not) {
         if (not < 0 || not > 100) {
             System.out.println("Geçerli not girin!");
-            this.not = -1; // Geçersiz not
+            this.not = -1; 
         } else {
             this.not = not;
         }
